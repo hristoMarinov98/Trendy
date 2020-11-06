@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trendy</title>
+    
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="jumbotron">
+  <h1 class="display-4">How lit are your favourite songs?</h1>
+  <p class="lead">The popularity of a track is a value between 0 and 100, with 100 being the most popular. The popularity is calculated by algorithm and is based, in the most part, on the total number of plays the track has had and how recent those plays are.</p>
+  <hr class="my-4">
+  <p>Press the button bellow to calculate the average popularity of your favourite songs.</p>
+  <p class="lead">
+    <button class="btn btn-primary btn-lg" id="calculateAverage" role="button">Calculate</button>
+  </br>
+    <h3 id="averageResult"></h3> 
+</div>
+    <div class="col-md-12">
+   <div class="card-deck">
+  <div class="card bg-light">
+    <img class="card-img-top" src="logo.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Your most popular song</h5>
+      <h2 class="card-text text-info" id="mps">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</h2>
+      <p class="card-text" ><small class="text-muted" id="songPopularity">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card bg-light">
+    <img class="card-img-top" src="logo.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Your most popular artist</h5>
+      <h2 class="card-text text-info" id="mpa">This card has supporting text below as a natural lead-in to additional content.</h2>
+      <p class="card-text" ><small class="text-muted" id="artistPopularity">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card bg-light">
+    <img class="card-img-top" src="logo.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Your most followed artist</h5>
+      <h2 class="card-text text-info" id="mfa">This card has supporting text below as a natural lead-in to additional content.</h2>
+      <p class="card-text" ><small class="text-muted " id="artistFollowers">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  </div>
+</div>
+</br>
+ <div class="col-md-12">
+   <div class="card-deck">
+  <div class="card bg-light">
+    <img class="card-img-top" src="logo.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Your favourite song's popularity</h5>
+      <h2 class="card-text text-info" id="fsp">.</h2>
+      <p class="card-text" ><small class="text-muted" id="favSongPopularity"></small></p>
+    </div>
+  </div>
+  <div class="card bg-light">
+    <img class="card-img-top" src="logo.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Your favourite artist's popularity</h5>
+      <h2 class="card-text text-info" id="fap"></h2>
+      <p class="card-text" ><small class="text-muted" id="fapF"></small></p>
+    </div>
+  </div>
+  <div class="card bg-light">
+    <img class="card-img-top" src="logo.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Your least popular song</h5>
+      <h2 class="card-text text-info" id="lps"></h2>
+      <p class="card-text" ><small class="text-muted " id="lpsP"></small></p>
+    </div>
+  </div>
+  </div>
+</div>
+<footer class="page-footer">
+ <div class='container-fluid'>
+  
+        
+    
+      <div class="d-flex justify-content-center">
+      <h2>&#127378; Stay safe and listen to Spotify! &#127378; </h2>
+    </div>
+      
+   
+</div>
+</footer>
+
+
+
+    <script src="analiser.js"></script>
+    <script src="Track.js"></script>
+    <script src="Artist.js"></script>
+  </body>
+</html>
