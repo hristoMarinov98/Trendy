@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 
 var client_id = 'b19c76f72b3b495896bb165c2af534b2'; // Your client id
 var client_secret = '9b3286bb6cf8460f986759195dfd4814'; // Your secret
-var redirect_uri = 'https://trendyspotify.herokuapp.com/callback '; // Your redirect uri
+var redirect_uri = 'https://trendyspotify.herokuapp.com/callback'; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters
@@ -133,4 +133,4 @@ app.get('/refresh_token', function(req, res) {
 });
 
 console.log('Listening on 3000');
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 5000);
